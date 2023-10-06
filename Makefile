@@ -1,5 +1,5 @@
 build:
-	docker build . -t indapublic:swagger-cli
+	docker build --build-arg NODE_VERSION=$(NODE_VERSION) . -t indapublic/swagger-cli:$(NODE_VERSION)
 
 push:
-	docker push indapublic/swagger-cli:latest
+	docker push indapublic/swagger-cli:$(NODE_VERSION)

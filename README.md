@@ -1,7 +1,7 @@
 ```
-make build
+make NODE_VERSION=18 build
+```
 
-docker tag <id> indapublic/swagger-cli:latest
-
-make push
+```
+make NODE_VERSION=18 publish
 ```
